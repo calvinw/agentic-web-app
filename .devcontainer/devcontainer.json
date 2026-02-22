@@ -1,5 +1,12 @@
 {
   "name": "agentic-web-app",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "workbench.startupEditor": "none"
+      }
+    }
+  },
   "postCreateCommand": "echo 'Run: bash start_servers.sh'",
   "portsAttributes": {
     "5173": {

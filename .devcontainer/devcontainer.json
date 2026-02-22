@@ -1,6 +1,9 @@
 {
   "name": "agentic-web-app",
   "customizations": {
+    "codespaces": {
+      "openFiles": []
+    },
     "vscode": {
       "settings": {
         "workbench.startupEditor": "none"

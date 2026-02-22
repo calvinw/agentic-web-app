@@ -1,73 +1,66 @@
-# React + TypeScript + Vite
+# agentic-web-app
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple counter app built with React, TypeScript, Vite, Tailwind CSS, and shadcn/ui.
 
-Currently, two official plugins are available:
+## Live App
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The app is automatically deployed to GitHub Pages on every push to `main`:
 
-## React Compiler
+**https://calvinw.github.io/agentic-web-app/**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Getting Started (Codespace or Local)
 
-## Expanding the ESLint configuration
+After creating a Codespace (or cloning locally), nothing runs automatically. Open a terminal and use the scripts below depending on what you want to do.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Start the Dev Server
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+bash start_servers.sh
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Installs dependencies (if needed) and starts the Vite dev server on port 5173. Safe to re-run at any time to restart the server.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Install an AI Coding Assistant
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+bash install_agent_tool.sh
+```
+
+Presents a menu to install one of the following:
+
+1. **Claude Code**
+2. **Opencode**
+3. **Gemini CLI**
+4. **Codex CLI**
+
+### Share Your Terminal (upterm)
+
+```bash
+bash install_upterm.sh
+```
+
+Installs [upterm](https://github.com/owenthereal/upterm) for sharing your terminal session. After installation, run:
+
+```bash
+upterm host --accept
+```
+
+## Tech Stack
+
+- [Vite](https://vite.dev/) — build tool and dev server
+- [React](https://react.dev/) + TypeScript
+- [Tailwind CSS v4](https://tailwindcss.com/)
+- [shadcn/ui](https://ui.shadcn.com/) — component library
+
+## Adding shadcn Components
+
+```bash
+npx shadcn@latest add <component-name>
+```
+
+## Build
+
+```bash
+npm run build    # production build
+npm run preview  # preview the production build locally
 ```

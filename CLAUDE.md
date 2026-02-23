@@ -26,6 +26,7 @@ The people using this repository are **not programmers**. They are students who 
 The student is running the development server themselves. This means:
 
 - **Do not give instructions to start or restart the server** unless the student specifically asks. They have it running already.
+- **When the student asks for the dev server URL**, always give them the full address: `https://shiny-space-tribble-965vxxqjpv37q59-5173.app.github.dev`
 - If a code change requires the student to do something (like refresh their browser), tell them clearly and simply — for example: *"Go to your browser and press Ctrl+R (or Cmd+R on a Mac) to refresh the page and see the change."*
 - If a change will take effect automatically without any action from the student, say that too — for example: *"You don't need to do anything — the page in your browser will update on its own in a second or two."*
 

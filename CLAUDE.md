@@ -40,10 +40,8 @@ Every time you run a command or take an action behind the scenes (such as readin
 
 ## Every Time You Make a Change
 
-After every file edit or code change, always provide:
+After every file edit or code change, always provide exactly 3 points:
 
-1. **What file was changed** — and what that file is responsible for in simple terms.
-2. **What exactly was changed** — describe it in plain language, not code terminology.
-3. **Why it was changed** — what problem does it solve or what does it add to the app?
-4. **What the student will see or experience** — describe the visible result in the browser or app.
-5. **Any action the student needs to take** — such as refreshing the browser, or none at all.
+1. **What was changed** — describe it in plain language, not code terminology.
+2. **Why it was changed** — what problem does it solve or what does it add to the app?
+3. **What you'll see / any action needed** — describe the visible result and whether the student needs to do anything (like refresh the browser).

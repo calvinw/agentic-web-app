@@ -18,6 +18,6 @@
     }
   },
   "remoteEnv": {
-    "CLAUDE_CODE_DISABLE_VSCODE_EXTENSION": "1"
+    "CLAUDE_CODE_IDE_SKIP_AUTO_INSTALL": "1"
   }
 }

@@ -9,8 +9,8 @@ function App() {
       <h1 className="text-4xl font-bold">shadcn + Vite + React</h1>
       <p className="text-2xl">Count: {count}</p>
       <div className="flex gap-2">
-        <Button onClick={() => setCount(c => c - 1)}>Decrement</Button>
-        <Button onClick={() => setCount(c => c + 1)}>Increment</Button>
+        <Button className="bg-blue-500 hover:bg-blue-600" onClick={() => setCount(c => c - 1)}>Decrement</Button>
+        <Button className="bg-purple-500 hover:bg-purple-600" onClick={() => setCount(c => c + 1)}>Increment</Button>
       </div>
     </div>
   )

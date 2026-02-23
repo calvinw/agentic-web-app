@@ -2,12 +2,6 @@
 
 A simple counter app built with React, TypeScript, Vite, Tailwind CSS, and shadcn/ui.
 
-## Live App
-
-The app is automatically deployed to GitHub Pages on every push to `main`:
-
-**https://calvinw.github.io/agentic-web-app/**
-
 ## Getting Started (Codespace or Local)
 
 After creating a Codespace (or cloning locally), nothing runs automatically. Open a terminal and use the scripts below depending on what you want to do.
@@ -15,7 +9,7 @@ After creating a Codespace (or cloning locally), nothing runs automatically. Ope
 ### Start the Dev Server
 
 ```bash
-bash start_servers.sh
+$ start_servers.sh
 ```
 
 Installs dependencies (if needed) and starts the Vite dev server on port 5173. Safe to re-run at any time to restart the server.
@@ -23,7 +17,7 @@ Installs dependencies (if needed) and starts the Vite dev server on port 5173. S
 ### Install an AI Coding Assistant
 
 ```bash
-bash install_agent_tool.sh
+$ install_agent_tool.sh
 ```
 
 Presents a menu to install one of the following:
@@ -33,17 +27,24 @@ Presents a menu to install one of the following:
 3. **Gemini CLI**
 4. **Codex CLI**
 
+You will have to authenticate for each tool accordingly.
+
+
 ### Share Your Terminal (upterm)
 
 ```bash
-bash install_upterm.sh
+$ install_upterm.sh
 ```
 
 Installs [upterm](https://github.com/owenthereal/upterm) for sharing your terminal session. After installation, run:
 
 ```bash
-upterm host --accept
+$ upterm host --accept
 ```
+
+## Github Page for this Project
+
+The app is automatically deployed to GitHub Pages on every push to `main`. This means if you created a new repo then you need to enable github pages yourself.
 
 ## Tech Stack
 
@@ -55,12 +56,12 @@ upterm host --accept
 ## Adding shadcn Components
 
 ```bash
-npx shadcn@latest add <component-name>
+$ npx shadcn@latest add <component-name>
 ```
 
 ## Build
 
 ```bash
-npm run build    # production build
-npm run preview  # preview the production build locally
+$ npm run build    # production build
+$ npm run preview  # preview the production build locally
 ```

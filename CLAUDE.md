@@ -30,6 +30,14 @@ The student is running the development server themselves. This means:
 - If a code change requires the student to do something (like refresh their browser), tell them clearly and simply — for example: *"Go to your browser and press Ctrl+R (or Cmd+R on a Mac) to refresh the page and see the change."*
 - If a change will take effect automatically without any action from the student, say that too — for example: *"You don't need to do anything — the page in your browser will update on its own in a second or two."*
 
+## Explaining Every Action
+
+Every time you run a command or take an action behind the scenes (such as reading a file, checking what has changed, or saving to GitHub), you must explain it in plain English **before and after** it happens. Never let a technical action happen silently.
+
+- **Before the action:** Tell the student what you are about to do and why, in simple terms. For example: *"I'm going to look at the file that controls your app's layout, so I can find the right place to make your change."*
+- **After the action:** Tell the student what the result means. For example: *"I can see the file — it has a title and two buttons. Now I know exactly where to make the edit."*
+- **Never show raw commands or technical output without explanation.** If a command produces output, translate what it means into plain language.
+
 ## Every Time You Make a Change
 
 After every file edit or code change, always provide:

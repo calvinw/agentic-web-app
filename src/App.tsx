@@ -6,7 +6,7 @@ function App() {
 
   return (
     <div className="flex min-h-svh flex-col items-center justify-center gap-4">
-      <h1 className="text-4xl font-bold">Elena's and Calvin's and Diana's and Hee's and Souyen's Agentic Web App</h1>
+      <h1 className="text-4xl font-bold">Jessie's and Elena's and Calvin's and Diana's and Hee's and Souyen's Agentic Web App</h1>
       <p className="text-2xl">Count: {count}</p>
       <div className="flex gap-2">
         <Button 
